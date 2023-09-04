@@ -2,10 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .main-container{
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(36, 214, 217);
     width: 100%;
     height: 100vh;
     padding: 10px;
@@ -13,7 +14,8 @@
 }
 .weather-app{
     width: 35%;
-    background:linear-gradient(120deg,rgb(7, 171, 136),rgb(194, 12, 235),rgb(190, 221, 34));
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(186,148,233,1) 100%);
     margin: 100px auto;
     border-radius: 15px;
     padding: 20px;
@@ -27,4 +29,111 @@
 .input-box input{
     height: 60px;
     flex: 1;
+    border-radius: 40px;
+    border: 0;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+}
+.input-box input::placeholder{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.input-box button{
+    border-radius: 50%;
+    margin-left: 10px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+.input-box button:hover{
+    scale: 1.05;
+}
+.temp-detailes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.temp-detailes .temp-img img{
+    margin-top: 40px;
+    width: 130px;
+    height: 130px;
+}
+.temp-detailes .temp-info{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.temp-detailes .temp-info h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.temp-detailes .temp-info h2{
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.more-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.more-info .col1{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 18px;
+}
+.more-info .col1 .humidity-img img{
+    height: 50px;
+    width: 50px;
+}
+.more-info .col1 .humidity{
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    margin-left: 12px;
+}
+.more-info .col1 .humidity h3{
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+.more-info .col1 .humidity h4{
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+.more-info .col2{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+}
+.more-info .col2 .wind-img img{
+    height: 50px;
+    width: 50px;
+}
+.more-info .col2 .wind{
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    margin-left: 12px;
+}
+.more-info .col2 .wind h3{
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+.more-info .col2 .wind h4{
+    letter-spacing: 1px;
+    font-size: 25px;
 }
