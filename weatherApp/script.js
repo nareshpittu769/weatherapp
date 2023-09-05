@@ -5,8 +5,7 @@ var searchbtn = document.querySelector('.search-btn')
 var cityname = document.querySelector('#search')
 async function findTemp(city){
 
-
-    let res = await fetch(api+city+`&appid=${apikey}`)
+    let res = await fetch(api+city.trim()+`&appid=${apikey}`)
     if(res.status == 404){
         alert('Invalid city')
     }
