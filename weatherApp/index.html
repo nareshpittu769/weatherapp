@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/feviocn.avif" type="image/x-icon">
 </head>
 <body>
     <div class="main-container">
@@ -13,35 +14,38 @@
                 <input type="text" name="search" id="search" placeholder="Enter city name">
                 <button class="search-btn"><img src="./images/icons8-search-48.png"></button>
             </div>
-            <div class="temp-detailes">
-                <div class="temp-img">
-                    <img src="./images/icons8-partly-cloudy-day-48.png" >
+            <div class="temp-detailes-box">
+                <div class="temp-detailes">
+                    <div class="temp-img">
+                        <img src="./images/icons8-partly-cloudy-day-48.png" >
+                    </div>
+                    <div class="temp-info">
+                        <h1 class="temp">42°C</h1>
+                        <h2 class="city">hyderabad</h2>
+                    </div>
                 </div>
-                <div class="temp-info">
-                    <h1 class="temp">42°C</h1>
-                    <h2 class="city">hyderabad</h2>
+                <div class="more-info">
+                    <div class="col1">
+                        <div class="humidity-img">
+                            <img src="./images/humidity.png">
+                        </div>
+                        <div class="humidity">
+                            <h3>62%</h3>
+                            <h4>Humidity</h4>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <div class="wind-img">
+                            <img src="./images/wind.png">
+                        </div>
+                        <div class="wind">
+                            <h3>18 Km/h</h3>
+                            <h4>wind speed</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="more-info">
-                <div class="col1">
-                    <div class="humidity-img">
-                        <img src="./images/icons8-heavy-rain-48.png">
-                    </div>
-                    <div class="humidity">
-                        <h3>62%</h3>
-                        <h4>Humidity</h4>
-                    </div>
-                </div>
-                <div class="col2">
-                    <div class="wind-img">
-                        <img src="./images/icons8-partly-cloudy-day-48.png">
-                    </div>
-                    <div class="wind">
-                        <h3>18 Km/h</h3>
-                        <h4>wind speed</h4>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
     <script src="./script.js"></script>
