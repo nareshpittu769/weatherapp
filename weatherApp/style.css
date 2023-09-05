@@ -4,8 +4,315 @@
     box-sizing: border-box;
     font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-@media only screen and (min-width:1024px){
-    
+
+@media only screen and (max-width:480px){
+            
+.main-container{
+    background-color: rgb(36, 214, 217);
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    min-height: 100vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 350px;
+}
+.weather-app{
+    width: 70%;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(186,148,233,1) 100%);
+    margin: 100px auto;
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 300px;
+}
+.input-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-box input{
+    height: 50px;
+    flex: 1;
+    min-width: 60%;
+    border-radius: 40px;
+    border: 0;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+}
+.input-box input::placeholder{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.input-box button{
+    border-radius: 50%;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+.input-box button img{
+    height: 30px;
+    width: 30px;
+}
+.input-box button:hover{
+    scale: 1.05;
+}
+
+.temp-detailes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.temp-detailes .temp-img img{
+    margin-top: 40px;
+    width: 110px;
+    height: 110px;
+}
+.temp-detailes .temp-info{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.temp-detailes .temp-info h1{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.temp-detailes .temp-info h2{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.more-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.more-info .col1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18px;
+}
+.more-info .col1 .humidity-img img{
+    height: 25px;
+    width: 25px;
+}
+.more-info .col1 .humidity{
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    margin-left: 12px;
+}
+.more-info .col1 .humidity h3{
+    font-size: 16px;
+    margin-top: 5px;
+    /* margin-bottom: 5px; */
+    letter-spacing: 1px;
+}
+.more-info .col1 .humidity h4{
+    letter-spacing: 1px;
+    font-size: 16px;
+    /* margin-top: 12px; */
+}
+.more-info .col2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+}
+.more-info .col2 .wind-img img{
+    height: 30px;
+    width: 30px;
+    background: transparent;
+}
+.more-info .col2 .wind{
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    margin-left: 12px;
+}
+.more-info .col2 .wind h3{
+    font-size: 16px;
+    margin-top: 5px;
+    /* margin-bottom: 5px; */
+    /* letter-spacing: 1px; */
+}
+.more-info .col2 .wind h4{
+    letter-spacing: 1px;
+    font-size: 16px;
+    /* margin-top: 12px; */
+}
+.temp-detailes-box{
+    display: none;
+}  
+}
+
+
+@media only screen and (min-width:481px) and (max-width:768px){
+          
+.main-container{
+    background-color: rgb(36, 214, 217);
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    min-height: 100vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather-app{
+    width: 70%;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(186,148,233,1) 100%);
+    margin: 100px auto;
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 60%;
+}
+.input-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-box input{
+    height: 50px;
+    flex: 1;
+    min-width: 60%;
+    border-radius: 40px;
+    border: 0;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+}
+.input-box input::placeholder{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.input-box button{
+    border-radius: 50%;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+.input-box button img{
+    height: 30px;
+    width: 30px;
+}
+.input-box button:hover{
+    scale: 1.05;
+}
+
+.temp-detailes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.temp-detailes .temp-img img{
+    margin-top: 40px;
+    width: 110px;
+    height: 110px;
+}
+.temp-detailes .temp-info{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.temp-detailes .temp-info h1{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.temp-detailes .temp-info h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.more-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.more-info .col1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18px;
+}
+.more-info .col1 .humidity-img img{
+    height: 25px;
+    width: 25px;
+}
+.more-info .col1 .humidity{
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    margin-left: 12px;
+}
+.more-info .col1 .humidity h3{
+    font-size: 18px;
+    margin-top: 5px;
+    /* margin-bottom: 5px; */
+    letter-spacing: 1px;
+}
+.more-info .col1 .humidity h4{
+    letter-spacing: 1px;
+    font-size: 18px;
+    /* margin-top: 12px; */
+}
+.more-info .col2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+}
+.more-info .col2 .wind-img img{
+    height: 30px;
+    width: 30px;
+    background: transparent;
+}
+.more-info .col2 .wind{
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    margin-left: 12px;
+}
+.more-info .col2 .wind h3{
+    font-size: 18px;
+    margin-top: 5px;
+    /* margin-bottom: 5px; */
+    /* letter-spacing: 1px; */
+}
+.more-info .col2 .wind h4{
+    letter-spacing: 1px;
+    font-size: 18px;
+    /* margin-top: 12px; */
+}
+.temp-detailes-box{
+    display: none;
+}
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+       
 .main-container{
     background-color: rgb(36, 214, 217);
     width: 100%;
@@ -24,6 +331,158 @@
     border-radius: 15px;
     padding: 20px;
     min-width: 40%;
+}
+.input-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-box input{
+    height: 50px;
+    flex: 1;
+    min-width: 60%;
+    border-radius: 40px;
+    border: 0;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+}
+.input-box input::placeholder{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.input-box button{
+    border-radius: 50%;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+.input-box button img{
+    height: 30px;
+    width: 30px;
+}
+.input-box button:hover{
+    scale: 1.05;
+}
+
+.temp-detailes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.temp-detailes .temp-img img{
+    margin-top: 40px;
+    width: 130px;
+    height: 130px;
+}
+.temp-detailes .temp-info{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.temp-detailes .temp-info h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.temp-detailes .temp-info h2{
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.more-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.more-info .col1{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin-left: 18px;
+}
+.more-info .col1 .humidity-img img{
+    height: 25px;
+    width: 25px;
+}
+.more-info .col1 .humidity{
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    margin-left: 12px;
+}
+.more-info .col1 .humidity h3{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+.more-info .col1 .humidity h4{
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-top: 12px;
+}
+.more-info .col2{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+}
+.more-info .col2 .wind-img img{
+    height: 35px;
+    width: 35px;
+    background: transparent;
+}
+.more-info .col2 .wind{
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    margin-left: 12px;
+}
+.more-info .col2 .wind h3{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* letter-spacing: 1px; */
+}
+.more-info .col2 .wind h4{
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-top: 12px;
+}
+.temp-detailes-box{
+    display: none;
+}
+}
+
+@media only screen and (min-width:1025px) and (max-width:1200px){
+    
+.main-container{
+    background-color: rgb(36, 214, 217);
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    min-height: 100vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather-app{
+    width: 50%;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(186,148,233,1) 100%);
+    margin: 100px auto;
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 38%;
 }
 .input-box{
     width: 100%;
